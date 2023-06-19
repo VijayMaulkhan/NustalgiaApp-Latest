@@ -1,0 +1,14 @@
+<Page loaded="onLoaded">
+    <ActionBar title="Live Interview" icon="" />
+    <StackLayout VerticalOptions="Center">
+    <Label text="Interview Completed" class="h2 text-center" textWrap="true"/>
+    <Label text=" You did great! " class="h1 text-center" textWrap="true"/>
+
+    <Button class="-primary" backgroundColor="#43b883" text="Back to Birthday Menu" onTap="onNextButtonTap" /> 
+    <Button class="-primary" text="<< Last question" onTap="onLastQuestionButtonTap" />
+    <Button class="-primary" backgroundColor="#000080" textColor="white"  text="Reset Interview" onTap="onResetButtonTap" /> 
+    <Image src="~/nustalgia_wperson_bruds.jpg" stretch="aspectFit"></Image>
+
+    </StackLayout>
+
+</Page>

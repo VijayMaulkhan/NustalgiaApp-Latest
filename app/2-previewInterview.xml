@@ -1,0 +1,24 @@
+<Page loaded="onLoaded">
+    <ActionBar tite="Preview"/>
+    <StackLayout>
+    <Label text="Interview Preview" class="h1 text-center" textWrap="true"></Label>
+<ListView items="{{ questions }}" 
+          separatorColor="orangered" rowHeight="50"
+          class="list-group" id="listView" row="2" height="300">
+    <ListView.itemTemplate>
+        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+        <StackLayout class="list-group-item">
+            <Label text="{{ question }}" textWrap="true" class="title" />
+        </StackLayout>
+    </ListView.itemTemplate>
+</ListView>
+
+    <!-- Return the questions? -->
+    <!-- DISPLAY RIGHT HERE -->
+
+    <Button text="Go Back" onTap="onLastButtonTap" /> 
+    </StackLayout>
+
+
+
+</Page>

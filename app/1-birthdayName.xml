@@ -1,0 +1,19 @@
+<Page loaded="onLoaded" >
+    <ActionBar title="Nustalgia" icon="" />
+<!-- 
+    <FlexboxLayout flexDirection = "column" justifyContent="center" alignItems="center">
+        <TextField hint="username" marginbottom="30"/>
+        <TextField hint="password" secure="true" marginBottom="30"/>
+        <Button text="Login"></Button>
+    </FlexboxLayout>
+    -->
+    <StackLayout>
+    <Label text="Who are we celebrating today?" class="h1 text-center" textWrap="true"></Label>
+    <TextField hint="Enter Birthday Person's Namex" text = "{{ name }}" class="-primary"/>
+    <!-- <TextField hint="Enter Birthday Person's Namex" text = "{{ lame }}" class="-primary"/> -->
+    <Button text="Alert" class="-primary" onTap="onAlertButtonTap" />
+    <Button text="Begin" class="-primary" onTap="onNextButtonTap" />
+    <Button text="Go Back" class="-primary" onTap="onLastButtonTap" /> 
+    <Image src="~/nustalgia_wperson_bruds.jpg" stretch="aspectFit"></Image>
+    </StackLayout>
+</Page>

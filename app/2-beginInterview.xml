@@ -1,0 +1,28 @@
+<Page loaded="onLoaded">
+
+    <ActionBar tite="Preview"/>
+    <StackLayout VerticalOptions="Center">
+    <Label text="Question 1:" class="h2 text-center" textWrap="true" />
+    <Label text=" {{ message }} " class="h1 text-center" textWrap="true"/>
+    <Label text="Transition Words" class="h2 text-center" textWrap="true"/>
+    
+    <ListView items="{{ transitionWords }}" 
+          separatorColor="orangered" rowHeight="50"
+          class="list-group" id="listView" row="2" height="200">
+    <ListView.itemTemplate>
+        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+        <StackLayout class="list-group-item">
+            <Label text="{{ word }}" textWrap="true" class="title"  />
+        </StackLayout>
+    </ListView.itemTemplate>
+    </ListView>
+
+    <Button class="-primary" backgroundColor="#43b883" text="Next question >>" onTap="onNextQuestionButtonTap" /> 
+    <Button class="-primary" backgroundColor="#b84343" text="Cancel" onTap="onCancelButtonTap" /> 
+    <Image src="~/nustalgia_wperson_bruds.jpg" stretch="aspectFit"></Image>
+
+    <!--     <Image src="res://Nustalgia_WPerson_BRUDS.jpg" stretch="aspectFill" /> -->
+
+    </StackLayout>
+
+</Page>

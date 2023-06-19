@@ -1,0 +1,4 @@
+<Frame defaultPage="main-page">
+</Frame>
+
+<!-- Navigation works on the basis of frames, like a container for pages -->

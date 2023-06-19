@@ -1,0 +1,38 @@
+<Page loaded="onLoaded">
+    <ActionBar tite="Preview"></ActionBar>
+    <StackLayout>
+    <Label text="Interview Execution" class="h1 text-center" textWrap="true"/>
+    <ListView items="{{ questions }}" 
+          separatorColor="orangered" rowHeight="50"
+          class="list-group" id="listView" row="2" height="270">
+    <ListView.itemTemplate>
+        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+        <StackLayout class="list-group-item">
+            <Label text="{{ question }}" textWrap="true" class="title"  />
+        </StackLayout>
+    </ListView.itemTemplate>
+    </ListView>
+
+    <Label text="Transition Words" class="h1 text-center" textWrap="true"/>
+    
+    <ListView items="{{ transitionWords }}" 
+          separatorColor="orangered" rowHeight="50"
+          class="list-group" id="listView" row="2" height="200">
+    <ListView.itemTemplate>
+        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+        <StackLayout class="list-group-item">
+            <Label text="{{ word }}" textWrap="true" class="title"  />
+        </StackLayout>
+    </ListView.itemTemplate>
+    </ListView>
+    </StackLayout>
+    <AbsoluteLayout>
+    <!-- Return the questions? -->
+    <!-- DISPLAY RIGHT HERE -->
+    <Button left="120" text="<< Last question" onTap="onLastQuestionButtonTap" /> 
+    <Button right="120" text="Next question >>" onTap="onNextQuestionButtonTap" /> 
+    <Button text="Cancel" onTap="onLastButtonTap" /> 
+    </AbsoluteLayout>
+
+
+</Page>

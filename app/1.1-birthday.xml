@@ -1,0 +1,14 @@
+<Page loaded="onLoaded">
+    <ActionBar title="Nustalgia" icon="" />
+    <StackLayout>
+    <Label text="Birthday Event" class="h1 text-center" textWrap="true"></Label>
+    <Label text="{{ messagez }}" class="h1 text-center" textWrap="true"></Label>
+
+    <Button text="Preview" class="-primary" onTap="previewInterviewTap" />
+    <Button text="Modify" class="-primary" onTap="modifyInterviewTap" /> 
+    <Button text="Begin" class="-primary" onTap="beginInterviewTap" />
+    <Button text="Go Back" class="-primary" onTap="onLastButtonTap" /> 
+    <Image src="~/nustalgia_wperson_bruds.jpg" stretch="aspectFit"></Image>
+    </StackLayout>
+
+</Page>

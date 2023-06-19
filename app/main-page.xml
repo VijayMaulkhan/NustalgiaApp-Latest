@@ -1,0 +1,16 @@
+<!-- This event handler executes this function when this page loads -->
+<!-- <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="myFunction"> -->
+
+<!-- Simplified - loaded is like the function to run upon starting on this page -->
+<Page loaded="onLoadedMain">
+    <ActionBar title="Nustalgia" icon="" />
+        <StackLayout>
+        <Label text="{{ message }}" class="h1 text-center" textWrap="true"/>
+        <Button text="Birthday" class="-primary" onTap="onBirthdayTap"  />
+        <Button text="Milestone" class="-primary" onTap="onMilestoneTap" /> 
+        <Button text="Marriage" class="-primary" onTap="onMarriageTap" /> 
+    <Image src="~/nustalgia_wperson_bruds.jpg" stretch="aspectFit"></Image>
+
+        </StackLayout>
+
+</Page>
